@@ -1,0 +1,16 @@
+STEP 1
+======
+If you don't have sphinx installed, if you have 'pip', just run 'pip install sphinx'.
+
+You can check out http://sphinx-doc.org/ for more information.
+
+
+STEP 2
+======
+sphinx-build -b html . build
+
+
+STEP 3
+======
+Open up browser and load 'build/index.html'
+
