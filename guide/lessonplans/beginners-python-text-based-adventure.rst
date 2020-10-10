@@ -19,8 +19,6 @@ Introduction
 
 3. Get the code from https://github.com/codinggrace/text_based_adventure_game
 
-  .. image:: Python.jpg
-
 4. Open terminal/cmd, and type ``python``. Note ``>>>``, this means you
    are in the "Python interpretor".
 
@@ -202,13 +200,26 @@ Change
 
 to
 
-``print("Your name is {}".format(player_name))``
+``print(f"Your name is {player_name}")``
 
 Explanation:
 
-``"Your name is {}"`` is a string. Python treats string (and everything
-else) as an object, and Python provides many features and in-built
+``f"Your name is {player_name}"`` is a string. Python treats string (and everything else) as an object, and Python provides many features and in-built
 functions associated with each type of object.
+
+The **f** just before **"** is called `f-strings <https://www.python.org/dev/peps/pep-0498/>`_ which came into Python in version 3.6. So anything versions of Python prior to this version is not supported.
+
+**⚠️ NOTE: If you are using "Python version older than 3.6", you need to do the following:**
+
+Change
+
+``print(player_name)``
+
+to
+
+``print("Your name is {}".format(player_name))``
+
+You should look at something called `String formatting <https://docs.python.org/3/library/string.html#format-examples>`_ instead.
 
 The string above is calling ``format()`` and it requires something to be
 passed in. In this case, it's ``player_name``.
@@ -220,11 +231,21 @@ with the item in ``format()``.
 You can have as many ``{}`` as you want, as long as you have the same
 number of items for it to substitute with.
 
-Try:
+**👉 Try (Python versions 3.6 and neweer):**
+
+   what = "knight"
+   print(f"Your name is {player_name}. You are a {knight}.")
+
+
+**Save the file and run it in terminal/cmd, and see what happens.**
+
+**👉 Try (Python older than 3.6):**
 
 ``print("Your name is {}. You are a {}.".format(player_name, "knight"))``
 
 **Save the file and run it in terminal/cmd, and see what happens.**
+
+
 
 Switch to terminal/cmd, and launch into Python interpreter, remember ``>>>``.
 
@@ -234,7 +255,14 @@ Example of showing what in-built goodies that come with a string object:-
 
 ``>>> dir(hello)`` 
 
-Let's do the following:
+**👉 Try (Python versions 3.6 and neweer):**
+
+    >>> player_name = "Grace"
+    >>> what = "knight"
+    >>> f"Hello, {player_name}"
+    >>> f"Hello, {player_name}. You are a {what}.")
+
+**👉 Try (Python older than 3.6):**
 
     >>> player_name = "Grace"
     >>> "Hello, {}.".format(player_name)
@@ -243,6 +271,15 @@ Let's do the following:
 String Manipulations
 ~~~~~~~~~~~~~~~~~~~~
 Let's change your name string to uppercase, go to your Python interpretor (you should see ``>>>``):
+
+**👉 Try (Python versions 3.6 and neweer):**
+
+Type and hit return:
+
+    >>> player_name.upper()
+    >>> f"Your name is {player_name.upper()}. You are a {what}."
+
+**👉 Try (Python older than 3.6):**
 
 Type and hit return:
 
@@ -552,8 +589,8 @@ We will be focused on the ``guard()`` function. This will be called:-
 Dealing with the guard
 
 * Checking the guard and what the guard is doing.
-* Attack the guard.
 * Sneak around the guard and escape to freedom.
+* Attack the guard.
 
 guard() function
 ~~~~~~~~~~~~~~~~
@@ -569,15 +606,43 @@ Set up our dictionary. It's made up of
 Just like a dictionary in real life, you have a word that you look up and find the value associated with it. In this game, 
 the "key" will be an action we take, and the "value" will be the description of what that action is.
 
-Switch to Python interpretor, and type the following:
+When the dictionary is loaded by Python, this is what it looks like:
+
+.. image:: dict_01.png
+
+When user types in **check** and hits return, it should print out the value from the dictionary: 
+
+`"You see the guard is still sleeping, you need to get to that door on the right of him. What are you waiting for?"`
+
+.. image:: dict_02.png
+
+When user types in **sneak** and hits return, it should print out the value from the dictionary: 
+
+`"You approach the guard, he's still sleeping. Reaching for the door, you open it slowly and slip out."`
+
+followed by another string in the "if statement":
+
+`"You just slipped through the door before the guard realised it."`
+
+followed by another string after that:
+
+`"You are now outside, home free! Huzzah!\n"`
+
+If you remember, **\\n** is a "New Line" when it gets printed out.
+
+And you should be "returned" back to the function that called **guard()** function: `blue_door_room()`. This **return** is important as it breaks out of the While loop which otherwise will keep looping forever and the game will not end.
+
+Since nothing else needs to be done in function `blue_door_room()`, it goes back to `start_adventure()` function. As there's nothing else to do in `start_adventure()`, it returns back to `main()` function and exits the game as no more code is left to be executed.
+
+Let's break this down and switch to Python interpretor, and type the following and hit return:
 
 >>> actions_dict = {"check":"You see the guard"}
 
-.. image:: dict1.png
+.. image:: dict_04.png
 
 >>> action = actions_dict["check"]
 
-.. image:: dict2.png
+.. image:: dict_05.png
 
 NOTE: You don't rely on dictionaries to be ordered.
 
@@ -585,11 +650,11 @@ Try the following in the Python interpretor also and check the output of actions
 
 * get the keys
 
-    >>> list(actions_dict.keys())
+    >>> actions_dict.keys()
 
 * get the values
 
-    >>> list(actions_dict.values())
+    >>> actions_dict.values()
 
 * sort the dictionary keys
 
@@ -615,59 +680,6 @@ Try the following in the Python interpretor also and check the output of actions
 
     >>> for k,v in more_actions_dict.iteritems():
             print(k,v)
-
-
-While Loop
-~~~~~~~~~~
-WARNING: This is pretty dangerous to use, normally a *for loop* would handle most situations. If the *while loop* is not used properly, you might end up with an *infinite loop*. Which means the program will keep going until you force it to quit or when computer runs out of memory and crashes. To a user, it looks like it's crashed and not doing anything.
-
-But it's good to know about it.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-No need to repeat chunk of code, create **guard()** and can be called in both instances.
-
-Booleans
-~~~~~~~~
-
-Booleans is either True or False. In Python:-
-
-* 1 is True
-* 0 is False
-
-For this game, this is how we use the booleans.
-
-To start off with, the guard is asleep, therefore not moving. So we are going to set **guard_moved** variable to False.
-
-* If player decides to run and the guard has moved (**guard_moved = True**)
-   * Result: Game over
-* If player decides to run and the guard hasn't moved (**guard_moved = False**)
-   * Result: Guard stupidly looks the other way, and we set **guard_moved = True**
-* If player goes for the door and the guard has moved (**guard_moved = True**)
-   * Result: Freedom!
-
-     In the code "return" returns the code execution to the block of code where
-     the function was called from, in this case, blue_door_room()
-     Since there's nothing else to do in blue_door_room() after
-     calling guard(), it automaticall returns to start_adventure() and returns to main().
-
-     At this stage in main(), after start_adventure() on line 152, you can now print out
-     messages to the player that they have finished the game successfully (and alive).
-* If player goes for the door and the guard hasn't moved (**guard_moved = False**)
-   * Result: Game over.
-* If player types something gibberish and not recognised
-   * Result: Loops around until the player types run or door.
 
 
 While Loop
@@ -713,13 +725,28 @@ We do the following:-
 
 Exercise:
 ~~~~~~~~~
+**👉 Try (Python versions 3.6 and neweer):**
+
+Find:
+
+``print(f"Thanks for playing, {player_name.upper()}")``
+
+Change *player_name* to *name*.
+
+**Run the script**, see what happens.
+
+
+**👉 Try (Older than Python versions 3.6):**
+
 Find: 
 
 ``print("Thanks for playing, {}".format(player_name.upper()))``
 
 Change *player_name* to *name*.
 
-**Run the script**, see what happens.
+Once you made the changes above...
+
+**▶️ Run the script**, see what happens.
 
 *name* is local only to **get_player_name()**, and **main()** doesn't know it exists.
 
