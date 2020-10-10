@@ -112,10 +112,6 @@ Forums
 ######
 * `Farnell Element 14 Raspberry Pi Community Projects <http://www.element14.com/community/community/raspberry-pi/raspberrypi_projects?ICID=raspi-group-topban-piprojects>`_
 
-Guidelines
-##########
-* `Connecting to wi-fi via laptop with your Raspberry Pi <https://bitbucket.org/codinggrace/introduction-to-raspberry-pi/src/tip/workshops/projects/xx_guide_connecting_raspberrypi_over_wifi.md?at=default>`_
-
 Other resources
 ###############
 

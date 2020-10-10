@@ -37,7 +37,7 @@ Dublin's first workshop was introduction to Python as it was easy for me to find
 
 Size of workshop is up to each organiser. Dublin ones are typically capped at 25 attendees, and we aim to have 1 mentor per 5 attendees.
 
-Coding Grace workshop content (slides, exercises, source code, etc.) are shared here: `https://bitbucket.org/codinggrace/ <https://bitbucket.org/codinggrace/>`_
+Coding Grace workshop content (slides, exercises, source code, etc.) are shared here: `https://github.com/codinggrace <https://github.com/codinggrace>`_
 
 Please share your workshop content here, READMEs are .md files, so please fill as much information as you can on the content as well as references and resources. If you don't know how, send me a zipped file and I will add to the repository.
 
