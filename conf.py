@@ -289,5 +289,3 @@ epub_copyright = u'2013-2014, Vicky Twomey-Lee'
 intersphinx_mapping = {'http://docs.python.org/': None}
 
 todo_include_todos = True
-
-needs_sphinx = '3.2.1'
