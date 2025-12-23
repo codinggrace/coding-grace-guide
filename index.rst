@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Coding Graces's guide!
+Welcome to Coding Grace's guide!
 ==================================
 
 This guide is aim to help with the organisation and participation of Coding and its events.
