@@ -1,2 +1,5 @@
 build
 .venv
+.DS_Store
+.gitignore.swp
+
