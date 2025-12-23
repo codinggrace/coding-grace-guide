@@ -43,7 +43,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Coding Grace'
-copyright = u'2013-2020, Vicky Twomey-Lee'
+copyright = u'2013-2026, Vicky Twomey-Lee'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
