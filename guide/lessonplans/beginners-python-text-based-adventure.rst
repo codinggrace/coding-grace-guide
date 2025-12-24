@@ -228,29 +228,8 @@ functions associated with each type of object.
 
 The **f** just before **"** is called `f-strings <https://www.python.org/dev/peps/pep-0498/>`_ which came into Python in version 3.6. So anything versions of Python prior to this version is not supported.
 
-**⚠️ NOTE: If you are using "Python version older than 3.6", you need to do the following:**
 
-Change
-
-``print(player_name)``
-
-to
-
-``print("Your name is {}".format(player_name))``
-
-You should look at something called `String formatting <https://docs.python.org/3/library/string.html#format-examples>`_ instead.
-
-The string above is calling ``format()`` and it requires something to be
-passed in. In this case, it's ``player_name``.
-
-When Python encounters ``format()``, it expects and sees that it has 1
-item in between the ``()``, it will look for ``{}`` and substitute it
-with the item in ``format()``.
-
-You can have as many ``{}`` as you want, as long as you have the same
-number of items for it to substitute with.
-
-**👉 Try (Python versions 3.6 and newer):**
+**👉 Try:**
 
     ``what = "knight"``
 
@@ -258,13 +237,6 @@ number of items for it to substitute with.
 
 
 **Save the file and run it in terminal/cmd, and see what happens.**
-
-**👉 Try (Python older than 3.6):**
-
- ``print("Your name is {}. You are a {}.".format(player_name, "knight"))``
-
-**Save the file and run it in terminal/cmd, and see what happens.**
-
 
 
 Switch to terminal/cmd, and launch into Python interpreter, remember ``>>>``.
@@ -275,36 +247,23 @@ Example of showing what in-built goodies that come with a string object:-
 
     >>> dir(hello)
 
-**👉 Try (Python versions 3.6 and newer):**
+**👉 Try:**
 
     >>> player_name = "Grace"
     >>> what = "knight"
     >>> f"Hello, {player_name}"
     >>> f"Hello, {player_name}. You are a {what}.")
 
-**👉 Try (Python older than 3.6):**
-
-    >>> player_name = "Grace"
-    >>> "Hello, {}.".format(player_name)
-    >>> "Hello, {}. You are a {}.".format(player_name, "knight")
-
 String Manipulations
 ~~~~~~~~~~~~~~~~~~~~
 Let's change your name string to uppercase, go to your Python interpretor (you should see ``>>>``):
 
-**👉 Try (Python versions 3.6 and neweer):**
+**👉 Try:**
 
 Type and hit return:
 
     >>> player_name.upper()
     >>> f"Your name is {player_name.upper()}. You are a {what}."
-
-**👉 Try (Python older than 3.6):**
-
-Type and hit return:
-
-    >>> player_name.upper()
-    >>> "Your name is {}. You are a {}.".format(player_name.upper(), "knight")
 
 Exit the Python interpreter by typing ``exit()`` and hitting RETURN.
 
@@ -483,11 +442,11 @@ You are still in the Python interpretor. Run the following to get find out how m
 
 >>> len(treasure_chest)
 
-Let's run game\_08/py and see how it works.
+Let's run game\_08.py and see how it works.
 
-Switch back to game\08.py in your editor, go to line 44 (approx):
+Switch back to game\_08.py in your editor, go to line 44 (approx):
 
-``print("Take all {} treasure, press '1'".format(len(treasure_chest)))`` 
+``print(f"Take all {len(treasure_chest)} treasure(s), take 1")``
 
 This looks pretty complicated, here's a way to break it down and understand what is happening. You start from the inside and work out. 
 
@@ -495,7 +454,7 @@ The statements are all nested in parenthesis/round brackets.
 
 1. treasure_chest
 2. len(treasure_chest)
-3. format(len(treasure_chest)) -- this is a function, we know as it is preceded with ``.``, in this case, it's a string object ``"Take all {} treasure, press '1'"``.
+
 
 You can find how many items in a list through your Python interpreter as well. Switch to terminal/cmd and make sure you are in the Python interpreter (i.e. you see ``>>>``)
 
