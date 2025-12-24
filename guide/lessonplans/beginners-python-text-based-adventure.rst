@@ -527,9 +527,9 @@ Go to line #68 for the code to add the "crappy sword" back into the treasure_che
 
 Escaping characters
 ~~~~~~~~~~~~~~~~~~~
-Sometimes problems might occur when processing strings, open Python interpretor:
+Sometimes problems might occur when processing strings, open Python interpretor and type the following ::
 
-``"I said "Hello"."``
+>>> "I said "Hello"."
 
 You should see a syntax error. 
 
@@ -704,8 +704,6 @@ We do the following:-
 
 Exercise:
 ~~~~~~~~~
-**👉 Try (Python versions 3.6 and neweer):**
-
 Find:
 
 ``print(f"Thanks for playing, {player_name.upper()}")``
@@ -714,18 +712,6 @@ Change *player_name* to *name*.
 
 **Run the script**, see what happens.
 
-
-**👉 Try (Older than Python versions 3.6):**
-
-Find: 
-
-``print("Thanks for playing, {}".format(player_name.upper()))``
-
-Change *player_name* to *name*.
-
-Once you made the changes above...
-
-**▶️ Run the script**, see what happens.
 
 *name* is local only to **get_player_name()**, and **main()** doesn't know it exists.
 
@@ -754,7 +740,7 @@ Finally
 
 Read some of the best practices when writing Python code:-
 
-* http://legacy.python.org/dev/peps/pep-0008/
+* https://peps.python.org/pep-0008/
 * Main thing is if you are using tabs, make sure it's 4-spaces, most editors will convert it (check preferences/settings).
 
 Possible additions to the game:-
