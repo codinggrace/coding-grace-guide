@@ -150,7 +150,7 @@ decimals, they are known as floats.
 
 Wondering what the ``if __name__ == '__main__':`` means.
 
-It means that the Python script is also a standalone programme which makes it re-usuable. Just take it for now that normally this is the first thing you type. Sublime when you have it set to recognise *python* syntax, has a shortcut... try typing "if " and hit TAB key. It will autocomplete for you.
+It means that the Python script is also a standalone programme which makes it re-usuable. Just take it for now that normally this is the first thing you type. Your code editor, when you have it set to recognise *python* syntax, has a shortcut... try typing "if " and hit TAB key. It will autocomplete for you.
 
 We will see an example how we re-use Python scripts, otherwise known as *modules* at the end of the workshop if we have time. 
 
@@ -250,17 +250,18 @@ with the item in ``format()``.
 You can have as many ``{}`` as you want, as long as you have the same
 number of items for it to substitute with.
 
-**👉 Try (Python versions 3.6 and neweer):**
+**👉 Try (Python versions 3.6 and newer):**
 
-   what = "knight"
-   print(f"Your name is {player_name}. You are a {knight}.")
+    ``what = "knight"``
+
+    ``print(f"Your name is {player_name}. You are a {knight}.")``
 
 
 **Save the file and run it in terminal/cmd, and see what happens.**
 
 **👉 Try (Python older than 3.6):**
 
-``print("Your name is {}. You are a {}.".format(player_name, "knight"))``
+ ``print("Your name is {}. You are a {}.".format(player_name, "knight"))``
 
 **Save the file and run it in terminal/cmd, and see what happens.**
 
@@ -272,9 +273,9 @@ You can do this in the Python interpreter as well.
 
 Example of showing what in-built goodies that come with a string object:-
 
-``>>> dir(hello)`` 
+    >>> dir(hello)
 
-**👉 Try (Python versions 3.6 and neweer):**
+**👉 Try (Python versions 3.6 and newer):**
 
     >>> player_name = "Grace"
     >>> what = "knight"
