@@ -7,22 +7,41 @@ Learn Python by making a text-based adventure game
 Introduction
 ------------
 
-1. Setting up Python
+#. Setting up uv.
 
-   -  See
-      http://www.codinggrace.com/news/teaching-beginners-python-coderdojogirlsdcu-2014-11-8/
+    For MacOS, Linux and Windows instructions, please visit the following page for instructions to install uv: https://docs.astral.sh/uv/getting-started/installation/
 
-2. Editors
+#. Setting up Python
 
-   - Visual Studio Code (Recommended): https://code.visualstudio.com/
-   - Sublime Editor: See http://www.codinggrace.com/news/teaching-beginners-python-coderdojogirlsdcu-2014-11-8/
+    Using `uv` to set up Python. Type the following, and hit Return(⮐)::
 
-3. Get the code from https://github.com/codinggrace/text_based_adventure_game
+        uv python install 3.14
 
-4. Open terminal/cmd, and type ``python``. Note ``>>>``, this means you
+    You should be able to run Python version 3.14 by typing the following, and hit Return(⮐)::
+
+        python3.14
+    
+    and see it automatically return a message similar to the following::
+
+        Python 3.14.2 (main, Dec  9 2025, 19:29:30) [Clang 21.1.4 ] on darwin
+        Type "help", "copyright", "credits" or "license" for more information.
+        >>>
+
+    ℹ️ Reference: https://docs.astral.sh/uv/guides/install-python/
+
+#. Editors
+
+    - Visual Studio Code (Recommended): https://code.visualstudio.com/
+
+#. You can download the code from https://github.com/codinggrace/text_based_adventure_game
+   and move the zip file to your Desktop directory, and unzip it.
+
+    .. image:: download_source.png
+
+#. Open terminal/cmd, and type ``python``. Note ``>>>``, this means you
    are in the "Python interpretor".
 
-5. Type ``print("hello")`` and hit Return.
+#. Type ``print("hello")`` and hit Return.
 
    You have just ran your first Python script by telling Python to print
    the text "hello".
@@ -31,10 +50,10 @@ Introduction
    display it on your terminal/cmd, and it's there by default when you
    install Python.
 
-6. Type ``exit()`` to get out of "Python interpretor". You are now back
+#. Type ``exit()`` to get out of "Python interpretor". You are now back
    in command line. You don't see ``>>>`` anymore.
 
-7. Open Sublime Editor
+#. Open Code Editor
 
    -  File > New File
    -  File > Save As...
@@ -44,12 +63,12 @@ Introduction
    -  Type on first line ``print("hello, this is my first script")``
    -  File > Save
 
-8. Go to terminal/cmd, and type ``python myfirstscript.py`` and hit
+#. Go to terminal/cmd, and type ``python myfirstscript.py`` and hit
    Return.
 
    You just ran your first Python script via command line.
 
-9. Now open "game\_01.py".
+#. Now open "game\_01.py".
 
 
 game\_01.py
