@@ -33,6 +33,13 @@ Introduction
 
     - Visual Studio Code (Recommended): https://code.visualstudio.com/
 
+    **Note**: If you are using Visual Studio Code we recommend `disabling Copilot features <https://code.visualstudio.com/updates/v1_104#_hide-and-disable-github-copilot-ai-features>`__ for the duration of this workshop:
+
+    #. Go to `chat.disableAIFeatures <vscode://settings/chat.disableAIFeatures>`__
+    #. Check the box to disable
+
+    To re-enable later got back to the setting and uncheck the box.
+
 #. You can download the code from https://github.com/codinggrace/text_based_adventure_game
    and move the zip file to your Desktop directory, and unzip it.
 
