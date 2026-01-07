@@ -38,9 +38,25 @@ Introduction
 
     .. image:: download_source.png
 
+#. Unzip the downloaded file called "text_based_adventure_game-master.zip"
+
+#. Open VS Code. You will get a message to Trust authors, cick 
+
+#. File > Open Folder...
+
+   Open the unzipped folder, making sure you click into the folder itself.
+
+#. You will se the following - click "Yes, I trust Authors" blue button.
+
+    .. image:: vscode-startup.png
+
 #. Open terminal in VS Code: Terminal > New Terminal
 
 #. In the terminal window, type: ``uv sync``.
+
+#. You will see this pop up dialog, and click on the "Yes" blue button.
+
+    .. image:: open-terminal-and-run-uv-sync.png
 
 #. Close the terminal window.
 
