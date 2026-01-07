@@ -357,7 +357,7 @@ We just print out some statements to say that nothing happens.
 
 Note the ``return`` call. This is an in-built Python function.
 
-This ``return`` goes back to where it was called from, in this case, it's **start_adventure()** (line 34).
+This ``return`` goes back to where it was called from, in this case, it's **start_adventure()**.
 
 Red door
 ~~~~~~~~
