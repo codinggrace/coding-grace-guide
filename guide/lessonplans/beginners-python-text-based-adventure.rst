@@ -78,7 +78,7 @@ Introduction
    the text "hello".
 
    ``print()`` is an instruction to Python to print some text and
-   display it on your terminal/cmd, and it's there by default when you
+   display it on your terminal, and it's there by default when you
    install Python.
 
 #. Type ``exit()`` to get out of "Python interpretor". You are now back
@@ -94,7 +94,7 @@ Introduction
    -  Type on first line ``print("hello, this is my first script")``
    -  File > Save
 
-#. Go to terminal/cmd, and type ``python myfirstscript.py`` and hit
+#. Go to terminal, and type ``python myfirstscript.py`` and hit
    Return.
 
    You just ran your first Python script via command line.
@@ -228,9 +228,9 @@ it will be saved to ``player_name``.
 ``player_name`` is known as **a variable**, it's somewhere for the computer to store objects
 like strings and numbers.
 
-**Save the file and run it in terminal/cmd.**
+**Save the file and run it in terminal.**
 
-If you run the script now in terminal/cmd, nothing would happen as all
+If you run the script now in terminal, nothing would happen as all
 you did was store whatever the player typed in, and only last as long as
 the script is still running. When it finishes, that variable won't exist
 anymore.
@@ -239,7 +239,7 @@ Next line in script, type:
 
 ``print(player_name)``
 
-**Save the file and run it in terminal/cmd, and see what happens.**
+**Save the file and run it in terminal, and see what happens.**
 
 We are going to do some string formatting, this is recommended on offical Python.org docs.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -267,10 +267,10 @@ The **f** just before **"** is called `f-strings <https://www.python.org/dev/pep
     ``print(f"Your name is {player_name}. You are a {knight}.")``
 
 
-**Save the file and run it in terminal/cmd, and see what happens.**
+**Save the file and run it in terminal, and see what happens.**
 
 
-Switch to terminal/cmd, and launch into Python interpreter, remember ``>>>``.
+Switch to terminal, and launch into Python interpreter, remember ``>>>``.
 
 You can do this in the Python interpreter as well.
 
@@ -311,11 +311,11 @@ To create a function, it begins with ``def`` followed by name of your function.
 
 It should start with alphabetical characters only, try adding a number in front of main() and run it again. You should be a syntax error.
 
-**Save the file and run it in terminal/cmd, and see what happens.**
+**Save the file and run it in terminal, and see what happens.**
 
 Remove the number in front of the function name.
 
-**Save the file and run it in terminal/cmd, and see what happens.**
+**Save the file and run it in terminal, and see what happens.**
 
 game\_03.py
 -----------
@@ -487,7 +487,7 @@ The statements are all nested in parenthesis/round brackets.
 2. len(treasure_chest)
 
 
-You can find how many items in a list through your Python interpreter as well. Switch to terminal/cmd and make sure you are in the Python interpreter (i.e. you see ``>>>``)
+You can find how many items in a list through your Python interpreter as well. Switch to terminal and make sure you are in the Python interpreter (i.e. you see ``>>>``)
 
     >>> treasure_chest = ["diamonds", "gold", "silver", "sword"]
     >>> len(treasure_chest)
@@ -761,7 +761,7 @@ Re-usable modules
 
   * Next line, we will type ``say_hello()``
 * Save the script.
-* Go to your terminal/cmd and run the script: ``python myfirstscript.py``.
+* Go to your terminal and run the script: ``python myfirstscript.py``.
 
 The output should just be ``Hello!``.
 
