@@ -688,7 +688,7 @@ Try the following in the Python interpretor also and check the output of actions
 
 * looping a dictionary
 
-    >>> for k,v in more_actions_dict.iteritems():
+    >>> for k,v in more_actions_dict.items():
             print(k,v)
 
 
