@@ -38,7 +38,15 @@ Introduction
 
     .. image:: download_source.png
 
-#. Open terminal/cmd, and type ``python``. Note ``>>>``, this means you
+#. Open terminal in VS Code: Terminal > New Terminal
+
+#. In the terminal window, type: ``uv sync``.
+
+#. Close the terminal window.
+
+#. Open new terminal window again in VS Code: Terminal > New Terminal (The reason is so the virtual environment is picked up.)
+
+#. In the terminal window type ``python``. Note ``>>>``, this means you
    are in the "Python interpretor".
 
 #. Type ``print("hello")`` and hit Return.
